@@ -1,0 +1,31 @@
+.site-header {
+    background-color: $c-cement;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav {
+    &__ul {
+        margin: 0;
+        padding-left: 0;
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: block;
+        padding: 1rem;
+        color: $c-black;
+        transition: background-color .3s ease-in-out;
+
+        &_active,
+        &:hover,
+        &:focus {
+            background-color: $c-silver;
+        }
+    }
+}

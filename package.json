@@ -1,0 +1,31 @@
+{
+  "name": "food",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kevin-ho87/Food.git",
+  "author": "kevin-ho87 <31581926+kevin-ho87@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp --type=development",
+    "prod": "gulp --type=production"
+  },
+  "dependencies": {
+    "bulma": "^0.6.1",
+    "jquery": "^3.2.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "run-sequence": "^2.2.0"
+  }
+}

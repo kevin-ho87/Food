@@ -1,0 +1,56 @@
+.carousel {
+    position: relative;
+
+    &__ctrl {
+        position: absolute;
+        top: 40%;
+        z-index: 1;
+        border: 0;
+        color: $c-white;
+        display: block;
+        padding: 1rem;
+        background-color: rgba($c-black, .3);
+        transition: background-color .3s ease-in-out;
+
+        &:hover,
+        &:focus {
+            background-color: rgba($c-black, .6);
+        }
+
+        &_prev {
+            left: 0;
+        }
+
+        &_next {
+            right: 0;
+        }
+    }
+
+    .slick-dots {
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-left: .2rem;
+            margin-right: .2rem;
+        }
+
+        button {
+            display: block;
+            width: 10px;
+            height: 10px;
+            overflow: hidden;
+            text-indent: -9999px;
+            padding: 0;
+            border: 0;
+            border-radius: 50%;
+            background-color: $c-silver;
+        }
+
+        .slick-active button {
+            background-color: $c-black;
+        }
+    }
+}
