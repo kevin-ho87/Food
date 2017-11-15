@@ -1,0 +1,16 @@
+.triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+
+    &_left {
+        border-width: 5px 10px 5px 0;
+        border-color: transparent $c-white transparent transparent;
+    }
+
+    &_right {
+        border-width: 5px 0 5px 10px;
+        border-color: transparent transparent transparent $c-white;
+    }
+}
